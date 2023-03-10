@@ -151,7 +151,7 @@ fedora-vm    75m   Running   10.16.0.91   worker02   True
 kubectl expose vmi fedora-vm --name=fedora-svc --port=20222 --target-port=22 --type=NodePort
 kubectl get svc
 NAME              TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
-fedora-svc        NodePort    10.103.24.183   10.8.60.62    4242:2022      1m
+fedora-svc        NodePort    10.103.24.183   10.8.60.62    20222:4242      1m
 ```
 Ssh into vm
 ```
